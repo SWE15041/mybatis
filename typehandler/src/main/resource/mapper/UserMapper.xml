@@ -2,7 +2,41 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lyn.mapper.UserMapper">
-    <select id="selectAll" resultType="User">
+<!--
+
+    &lt;!&ndash;当前名称空间的缓存配置&ndash;&gt;
+    <cache>
+        <property name="?" value="?"/>
+    </cache>
+    &lt;!&ndash;引用其他名称空间的缓存配置&ndash;&gt;
+    <cache-ref namespace="?"/>
+    &lt;!&ndash;描述如何从数据库结果集中加载对象&ndash;&gt;
+    <resultMap id="" type="">
+        <result property="" column="" jdbcType="" javaType="" typeHandler=""/>
+    </resultMap>
+    &lt;!&ndash;弃用&ndash;&gt;
+    <parameterMap id="" type="">
+        <parameter property=""/>
+    </parameterMap>
+    &lt;!&ndash;用来定义可以被其他语句重用的语句块&ndash;&gt;
+    <sql id="columnList">
+
+    </sql>
+    &lt;!&ndash;映射插入语句&ndash;&gt;
+    <insert id="insert"></insert>
+    &lt;!&ndash;映射更新语句&ndash;&gt;
+    <update id="update"></update>
+    &lt;!&ndash;映射删除语句&ndash;&gt;
+    <delete id="delete"></delete>
+    &lt;!&ndash;映射查找语句&ndash;&gt;
+    <select id="select"></select>
+-->
+
+
+    <resultMap id="id" type="String">
+        <result typeHandler="" column="" javaType="" property="" jdbcType=""></result>
+    </resultMap>
+    <select id="selectAll" resultType="User" >
         select * from user ;
     </select>
 

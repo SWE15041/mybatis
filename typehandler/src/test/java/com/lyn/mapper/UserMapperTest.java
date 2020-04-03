@@ -37,4 +37,11 @@ public class UserMapperTest {
         sqlSession.commit();
         sqlSession.close();
     }
+
+    @Test
+    public void test() {
+        String str = "a";
+        str = "a".equals(str) ? "1" : "2";
+        System.out.println(str);
+    }
 }

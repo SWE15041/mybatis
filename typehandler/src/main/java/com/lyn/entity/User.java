@@ -1,8 +1,19 @@
 package com.lyn.entity;
 
 import com.lyn.constant.YesNoEnum;
+import org.apache.ibatis.type.Alias;
 
-public class User {
+import java.io.Serializable;
+
+
+/**
+ * @author lyn
+ * 光标移到类名上，按option+enter，选择自动生成版本号ID
+ */
+@Alias("User")
+public class User implements Serializable {
+
+    private static final long serialVersionUID = 3672666473327681247L;
 
     private Integer id;
     private String name;
@@ -10,6 +21,7 @@ public class User {
     private Integer age;
     private String email;
     private YesNoEnum enable;
+
 
 
     public Integer getId() {

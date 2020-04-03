@@ -9,4 +9,6 @@ public interface UserMapper {
     List<User> selectAll();
 
     int insert(User user);
+
+
 }

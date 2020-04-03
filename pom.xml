@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>build</module>
-        <module>type-handler</module>
+        <module>typehandler</module>
     </modules>
 
 </project>

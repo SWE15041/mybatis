@@ -13,7 +13,7 @@
     <!--类型别名-->
     <typeAliases>
         <!--单独定义别名-->
-        <!--<typeAlias type="com.lyn.mybatis3.entity.User" alias="User"/>-->
+        <typeAlias type="com.lyn.entity.User" alias="User"/>
         <!--批量定义别名-->
         <package name="com.lyn.entity"/>
     </typeAliases>
@@ -49,11 +49,15 @@
         <mapper resource="mapper/UserMapper.xml"/>
 
         <!--2.单个注册：用全限定类名注册（需要将接口和xml文件放在同一个目录里才能生效）-->
-        <!--<mapper class="com.lyn.mybatis3.mapper.UserMapper"/>-->
+        <!--<mapper class="com.lyn.mapper.UserMapper"/>-->
 
-        <!--3.批量注册:（需要将接口和xml文件放在同一个目录里才能生效）-->
-        <!--<package name="com.lyn.mybatis3.mapper"/>-->
+        <!--3.批量注册:（需要将接口和xml文件放在同一个JAVA包才能生效）-->
+        <!--<package name="com.lyn.mapper"/>-->
 
+        <!--4. url:绝对路径，一般不用-->
+        <!--<mapper url=""/>-->
     </mappers>
+
+
 
 </configuration>
